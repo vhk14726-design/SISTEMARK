@@ -28,9 +28,6 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
       {/* Sidebar */}
       <aside className="hidden lg:flex w-64 border-r border-slate-800 flex-col p-6">
         <div className="flex items-center gap-3 mb-10 px-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shrink-0">
-            <i className="fa-solid fa-cube text-white text-sm"></i>
-          </div>
           <span className="text-sm font-bold truncate lowercase">make by rohit krause</span>
         </div>
 

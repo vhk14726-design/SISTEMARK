@@ -37,9 +37,6 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
       <div className="w-full max-w-md relative z-10">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl mb-4 shadow-lg shadow-blue-500/20">
-            <i className="fa-solid fa-cube text-white text-3xl"></i>
-          </div>
           <h1 className="text-3xl font-bold tracking-tight text-white mb-2 lowercase">make by rohit krause</h1>
         </div>
 
