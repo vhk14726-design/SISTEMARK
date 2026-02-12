@@ -2,10 +2,12 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { InsightData } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export const getDailyInsight = async (username: string): Promise<InsightData | null> => {
   try {
+    // Inicializamos dentro de la función para que el componente Login pueda cargar 
+    // incluso si la API_KEY no está disponible inmediatamente en el navegador.
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
       contents: `Generate a personalized greeting, a short motivational tech quote, and a useful coding tip for a developer named ${username}.`,
